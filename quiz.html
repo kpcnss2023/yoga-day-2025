@@ -101,6 +101,55 @@
         <input type="radio" name="q5" value="d"> Shavasana<br>
       </div>
     </div>
+    <div class="question">
+  <label class="form-label">6. Who proposed the idea of International Yoga Day at the UN?</label>
+  <div>
+    <input type="radio" name="q6" value="a"> Baba Ramdev<br>
+    <input type="radio" name="q6" value="b"> Narendra Modi<br>
+    <input type="radio" name="q6" value="c"> Sadhguru<br>
+    <input type="radio" name="q6" value="d"> Dalai Lama<br>
+  </div>
+</div>
+
+<div class="question">
+  <label class="form-label">7. In which year was the first International Yoga Day celebrated?</label>
+  <div>
+    <input type="radio" name="q7" value="a"> 2012<br>
+    <input type="radio" name="q7" value="b"> 2014<br>
+    <input type="radio" name="q7" value="c"> 2015<br>
+    <input type="radio" name="q7" value="d"> 2016<br>
+  </div>
+</div>
+
+<div class="question">
+  <label class="form-label">8. What is the theme of International Yoga Day 2024?</label>
+  <div>
+    <input type="radio" name="q8" value="a"> Yoga for Wellness<br>
+    <input type="radio" name="q8" value="b"> Yoga for Humanity<br>
+    <input type="radio" name="q8" value="c"> Yoga for Vasudhaiva Kutumbakam<br>
+    <input type="radio" name="q8" value="d"> Yoga at Home<br>
+  </div>
+</div>
+
+<div class="question">
+  <label class="form-label">9. Which organization supports the celebration of International Yoga Day globally?</label>
+  <div>
+    <input type="radio" name="q9" value="a"> WHO<br>
+    <input type="radio" name="q9" value="b"> UNESCO<br>
+    <input type="radio" name="q9" value="c"> United Nations<br>
+    <input type="radio" name="q9" value="d"> AYUSH Ministry<br>
+  </div>
+</div>
+
+<div class="question">
+  <label class="form-label">10. Which Indian ministry promotes Yoga and Ayurveda?</label>
+  <div>
+    <input type="radio" name="q10" value="a"> Ministry of Health<br>
+    <input type="radio" name="q10" value="b"> Ministry of AYUSH<br>
+    <input type="radio" name="q10" value="c"> Ministry of Culture<br>
+    <input type="radio" name="q10" value="d"> Ministry of External Affairs<br>
+  </div>
+</div>
 
     <div class="text-center mt-4">
       <button type="button" class="btn btn-theme" onclick="submitQuiz()">Submit Answers</button>
@@ -121,7 +170,12 @@
       q2: "b",  // Patanjali Yoga Sutras
       q3: "a",  // Kapalbhati
       q4: "c",  // June 21
-      q5: "b"   // Vrikshasana
+      q5: "b",  // Vrikshasana
+      q6: "b",  // Narendra Modi
+      q7: "c",  // 2015
+      q8: "c",  // Yoga for Vasudhaiva Kutumbakam
+      q9: "c",  // United Nations
+      q10: "b"  // Ministry of AYUSH
     };
 
     let score = 0;
@@ -136,11 +190,11 @@
     const resultBox = document.getElementById("resultBox");
     resultBox.style.display = "block";
 
-    if (score >= 3) {
-      resultBox.innerHTML = `🎉 Great job, ${participantName}! You scored ${score}/5. <br><br>
+    if (score >= 6) {
+      resultBox.innerHTML = `🎉 Great job, ${participantName}! You scored ${score}/10. <br><br>
         <a href="certificate.html" class="btn btn-theme mt-3">Get Certificate</a>`;
     } else {
-      resultBox.innerHTML = `😕 Oops, ${participantName}, you scored ${score}/5. Try again to get your certificate.`;
+      resultBox.innerHTML = `😕 Oops, ${participantName}, you scored ${score}/10. Try again to get your certificate.`;
     }
   }
 </script>
