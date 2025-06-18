@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yoga Certificate - PNG Export</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+      font-family: 'Georgia', serif;
+    }
+
+    .certificate-container {
+      position: relative;
+      width: 1600px;
+      height: 1131px;
+      margin: auto;
+    }
+
+    .certificate-bg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .name-text {
+      position: absolute;
+      top: 43.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 46px;
+      font-weight: bold;
+      color: #000;
+      white-space: nowrap;
+      font-family: 'Georgia', serif;
+    }
+
+    .btn {
+      margin: 30px auto;
+      display: block;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="certificate" class="certificate-container">
+    <img src="template bg.png"  class="certificate-bg" alt="Certificate" />
+    <div class="name-text" id="participantName">Participant Name</div>
+  </div>
+
+  <button class="btn" onclick="downloadAsPNG()">⬇️ Download as PNG</button>
+
+  <script>
+    const name = localStorage.getItem("participantName") || "Your Name";
+    document.getElementById("participantName").textContent = name;
+
+    function downloadAsPNG() {
+      const certificate = document.getElementById("certificate");
+
+      // Wait a moment to ensure image is fully loaded
+      const image = certificate.querySelector('img');
+      if (!image.complete) {
+        image.onload = () => renderCanvas(certificate);
+      } else {
+        renderCanvas(certificate);
+      }
+    }
+
+    function renderCanvas(element) {
+      html2canvas(element, {
+        scale: 2,
+        useCORS: true
+      }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = 'yoga_certificate.png';
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+      });
+    }
+  </script>
+
+</body>
+</html>
