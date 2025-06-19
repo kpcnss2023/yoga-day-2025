@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>International Yoga Day - June 21</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0fdf4;
+      font-family: 'times new roman', sans-serif;
+      color: #1b4332;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      background: url('WhatsApp Image 2025-06-18 at 15.40.56_ff3077e1.jpg') no-repeat center center;
+      background-size: cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero h1, .hero h3 {
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    .hero h3 {
+      font-weight: 400;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #064420;
+    }
+
+    .btn-theme {
+      background: linear-gradient(to right, #38a169, #2f855a);
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-theme:hover {
+      background: linear-gradient(to right, #2f855a, #276749);
+      transform: scale(1.05);
+    }
+
+    .form-control {
+      max-width: 300px;
+      margin: 0 auto;
+      border-radius: 20px;
+      border: 1px solid #a3d9a5;
+      padding: 10px 20px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 8px #81c784;
+      border-color: #81c784;
+    }
+
+    .img-fluid {
+      border-radius: 20px;
+    }
+
+    footer {
+      background-color: #1b4332;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="back.jpeg" alt="">
+    <div>
+      <h1>International Yoga Day</h1>
+      <h3>June 21st, 2025</h3>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="section-title">🧘‍♀️ Embrace Wellness Through Yoga 🧘‍♂️</h2>
+      <p class="lead">
+        Join us in celebrating the International Day of Yoga –  11th anniversary of this global celebration that promotes  unity, health, and well-being.
+
+      </p>
+      <!-- Acknowledgement Section -->
+<!-- Acknowledgement Section -->
+<div class="container mt-5">
+  <h5 class="section-title text-start fw-bold">!  With warm regards  !</h5>
+  <div class="row">
+      <div class="col-md-6 text-start">
+      <p class="text-start mb-1 fw-semibold">Correspondent</p>
+      <p class="text-start mb-1">Thiru. A. Venkatachalam </p>
+      <p class="text-start mb-1 fw-semibold">Principal</p>
+      <p class="text-start mb-1">Dr. P. S. Raghavendran</p>
+      <p class="text-start mb-1 fw-semibold">Vice Principal</p>
+      <p class="text-start mb-1">Dr. S. Senthikumar</p>
+      </div>
+       <div class="col-md-6 text-start">
+      <p class="mb-1 fw-semibold">NSS Program Officers</p>
+      <p class="text-start mb-1 ">Parameswaran K</p>
+      <p class="mb-1 ">Akilarasu M C</p>
+      <p class="mb-3">Poornima K</p>
+
+      <p class="mb-1 fw-bold">Yoga Day Quiz program is created by students:</p>
+      <p class="mb-1"> Tharani Dharan D (CT Dept)</p>
+      <p class="mb-1 "> Girivasan K (CT Dept)</p>
+      <p class="mb-1"> Nithish V G (CT Dept)</p>
+      </div>
+    </div>
+  </div>
+
+
+
+    </div>
+
+    <div class="row align-items-center g-5">
+      <div class="col-md-6">
+        <img src="stylized-sketch-yoga-poses-vector-260nw-179659049.jpg" alt="Yoga Pose" class="img-fluid shadow" />
+      </div>
+      <div class="col-md-6">
+        <h4 class="mb-3">🌍 Theme 2025: " 11th anniversary of this global celebration"</h4>
+        <p class="mb-4">
+          This year, we focus on how yoga connects the body, mind, and spirit to create balance and unity across the world. Participate in local or online yoga sessions, learn about the benefits of yoga, and take part in fun activities like yoga quizzes and workshops.
+        </p>
+
+        <div class="text-center">
+          <input type="text" id="nameInput" class="form-control mb-3" placeholder="Enter your name for certificate">
+          <button class="btn btn-theme" onclick="startQuiz()">🎉 Join Yoga Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 text-center">
+      <h4 class="section-title">🗓️ When: June 21, 2025</h4>
+      <h5 class="mb-3">📍 Where: Kongu Polytechnic College(Online + In-Person)</h5>
+      <p class="mb-0">Mark your calendar and inspire others to live a healthy, peaceful life.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    &copy; 2025 International Yoga Day. All Rights Reserved.
+  </footer>
+
+  <script>
+    function startQuiz() {
+      const name = document.getElementById("nameInput").value.trim();
+      if (!name) {
+        alert("Please enter your name to continue.");
+        return;
+      }
+      localStorage.setItem("participantName", name);
+      window.location.href = "quiz.html";
+    }
+  </script>
+
+</body>
+</html>
